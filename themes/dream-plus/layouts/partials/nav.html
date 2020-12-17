@@ -8,7 +8,7 @@
 	{{ if not .context.IsHome }}
 		<div class="item">
 			<a href="/">
-				<i class="inverted link home icon" title="{{ i18n `home` }}"> Home </i>
+				<i class="inverted link home icon" title="{{ i18n `home` }}"></i>
 			</a>
 		</div>
 	{{ end }}
@@ -17,7 +17,7 @@
 	{{ if ne .contentType .context.Section }}
 		<div class="item">
 			<a href="/{{ .contentType }}">
-				<i class="inverted link archive icon" title="{{ i18n `archive` }}"> Archive </i>
+				<i class="inverted big link archive icon" title="{{ i18n `archive` }}"></i>
 			</a>
 		</div>
 	{{ end }}
@@ -26,7 +26,7 @@
 	{{ if and (ne .context.Data.Plural "tags") .context.Site.Params.tags.enabled }}
 		<div class="item">
 			<a href="/tags">
-				<i class="inverted link tags icon" title="{{ i18n `tag` 1 }}"> Tags </i>
+				<i class="inverted big link tags icon" title="{{ i18n `tag` 1 }}"></i>
 			</a>
 		</div>
 	{{ end }}
@@ -35,7 +35,7 @@
 	{{ if and (ne .context.Data.Plural "categories") .context.Site.Params.categories.enabled }}
 		<div class="item">
 			<a href="/categories">
-				<i class="inverted link cubes icon" title="{{ i18n `category` 1 }}"> Categories </i>
+				<i class="inverted big link cubes icon" title="{{ i18n `category` 1 }}"></i>
 			</a>
     	</div>
 	{{ end }}
